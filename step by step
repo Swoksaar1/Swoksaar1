@@ -1,0 +1,7 @@
+laravel new todo-list
+php artisan make:model Todo -m
+herd open
+npm run dev
+php artisan make:volt todo-manager --class
+php artisan migrate
+php artisan make:policy TodoPolicy --model=Todo
