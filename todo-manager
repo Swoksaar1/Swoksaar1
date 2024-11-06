@@ -1,0 +1,48 @@
+<?php
+
+use Livewire\Volt\Component;
+use App\Models\Todo; 
+use Illuminate\Support\Facades\Auth;
+
+new class extends Component {
+    public string $todoName = '';
+
+    public function createTodo()
+    {
+        $this->validate([
+            'todoName' => 'required|min:3',
+        ]);
+
+        Todo::create(['name' => $this->todoName, 'user_id' => Auth::id()]);
+
+        $this->todoName = '';
+    }
+
+    public function delete($id)
+    {
+        Todo::find($id)?->delete();
+    }
+
+    public function with()
+    {
+        return [
+            'todos' => Auth::user()->todos()->get()
+        ];
+    }
+};
+?>
+
+<div>
+    <form wire:submit.prevent="createTodo">
+        <x-text-input wire:model="todoName" />
+        <x-primary-button type="submit">Create</x-primary-button>
+        <x-input-error :messages="$errors->get('todoName')" class="mt-2"/>
+    </form>
+
+    @foreach ($todos as $todo)
+        <div wire:key="{{ $todo->id }}" class="flex items-center space-x-4 space-y-2">
+            <div>{{ $todo->name }}</div>
+            <button wire:click="delete({{ $todo->id }})" class="bg-red-500 rounded hover:bg-red-700">Delete</button>
+        </div>
+    @endforeach
+</div>
