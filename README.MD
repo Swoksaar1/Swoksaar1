@@ -1,9 +1,3 @@
-<div align="center">
-  <img src="./assets/banner.gif" alt="Banner" width="100%" />
-</div>
-
-<br>
-
 <table width="100%">
   <tr>
     <td width="180" align="center" valign="middle">
