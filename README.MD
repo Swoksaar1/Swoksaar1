@@ -21,7 +21,7 @@
 
 ## Technologies I Use
 <p>
-  <img src="https://skillicons.dev/icons?i=django,python,html,css,tailwind,js,react,electron,nodejs,postgres,figma,github,git,vscode" />
+  <img src="https://skillicons.dev/icons?i=django,python,html,css,tailwind,js,react,electron,nodejs,postgres,sqlite,figma,github,git,vscode" />
 </p>
 
 ---
