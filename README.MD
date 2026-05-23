@@ -21,7 +21,7 @@
 
 ## Technologies I Use
 <p>
-  <img src="https://skillicons.dev/icons?i=django,python,html,css,tailwind,js,react,electron,nodejs,mysql,postgres,figma,github,git,vscode" />
+  <img src="https://skillicons.dev/icons?i=django,python,html,css,tailwind,js,react,electron,nodejs,postgres,sqlite,figma,github,git,vscode" />
 </p>
 
 ---
@@ -32,9 +32,3 @@
 - Vehicle Fuel Tracking System
 
 ---
-
-## GitHub Stats
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=Swoksaar1&show_icons=true&theme=tokyonight" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Swoksaar1&layout=compact&theme=tokyonight" height="170" />
-</p>
